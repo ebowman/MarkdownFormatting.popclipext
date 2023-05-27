@@ -1,0 +1,39 @@
+{
+  "identifier": "ie.boboco.popclip.extension.formatting",
+  "name": "Markdown Formats",
+  "icon": "formatting.png",
+  "actions": [
+    { 
+      "title": "Bold",
+      "icon": "bold.png",
+      "shell script": "echo -n \"**${POPCLIP_TEXT}**\"",
+      "interpreter": "bash",
+      "after": "paste-result",
+    },
+    { 
+      "title": "Italic",
+      "icon": "italic.png",
+      "shell script": "echo -n \"*${POPCLIP_TEXT}*\"",
+      "interpreter": "bash",
+      "after": "paste-result",
+    },
+    { 
+      "title": "Underline",
+      "icon": "underline.png",
+      "shell script": "echo -n \"_${POPCLIP_TEXT}_\"",
+      "interpreter": "bash",
+      "after": "paste-result",
+    }
+  ],
+  "requirements": [
+    "text", "cut", "paste"
+  ],
+  "stay visible": true,
+  "description": "Support basic in-place markdown formatting",
+  "credits": [
+    {
+      "link": "https://github.com/ebowman",
+      "name": "Eric Bowman"
+    }
+  ]
+}
